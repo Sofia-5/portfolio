@@ -290,20 +290,14 @@ h1 {
   font-family: "Noto Serif", serif;
   color: #ffffff;
   font-weight: 700;
+  font-size: 5rem;
+  margin: 60px 0px;
 }
 
 h2 {
   font-family: "Noto Serif", serif;
   color: #ffffff;
   font-weight: 500;
-}
-
-h1 {
-  font-size: 5rem;
-  margin: 60px 0px;
-}
-
-h2 {
   font-size: 3.5rem;
 }
 
@@ -320,25 +314,92 @@ label {
   font-weight: 400;
 }
 
-p,
 a {
   font-family: "Noto Sans HK", sans-serif;
   font-weight: 400;
+  color: #ffc576;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Noto Sans HK", sans-serif;
+  font-weight: 300;
   color: #ffffff;
   font-size: 1.6rem;
   line-height: 2rem;
   letter-spacing: 1px;
 }
 
+li {
+  font-family: "Noto Sans HK", sans-serif;
+  font-weight: 400;
+  color: #ffc576;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.allContentContainer {
+  -webkit-box-shadow: 0px 0px 25px 2px #ffc576;
+          box-shadow: 0px 0px 25px 2px #ffc576;
+  width: 75%;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: #1f2336;
+}
+
 /*****************/
 /* Header Styles */
 /*****************/
+.aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+div {
+  width: 100%;
+}
+
+div .headshot {
+  border-radius: 10px;
+  width: 80%;
+}
+
 /************************/
 /* About Section Styles */
 /************************/
 /*****************/
 /* Skills Styles */
 /*****************/
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+ul li {
+  width: 30%;
+}
+
+ul li i {
+  width: 100%;
+}
+
+ul li img {
+  display: block;
+  margin: 0 auto;
+}
+
 /******************/
 /*  Footer Styles */
 /******************/

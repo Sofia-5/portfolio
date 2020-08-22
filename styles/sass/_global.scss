@@ -20,20 +20,14 @@ h1 {
 font-family: $headerOneFont;
 color: #ffffff; 
 font-weight: 700; 
+font-size: 5rem; 
+margin: 60px 0px;
 } 
 
 h2 {
   font-family: $headerOneFont;
   color: #ffffff; 
   font-weight: 500; 
-}
-
-h1 {
-  font-size: 5rem; 
-  margin: 60px 0px;
-}
-
-h2 {
   font-size: 3.5rem; 
 }
 
@@ -41,7 +35,7 @@ h3,
 label,
 .label {
   font-family: $bodyFont;
-  color: #ffffff; 
+  color: $supAccentTwo; 
 }
 
 h3,
@@ -50,15 +44,36 @@ label {
   font-weight: 400; 
 }
 
-p, 
 a {
   font-family: $bodyFont;
   font-weight: 400;
-  color: #ffffff;
+  color: $secondaryColour;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: $bodyFont;
+  font-weight: 300;
+  color: $supAccentTwo;
   font-size: 1.6rem;
   line-height: 2rem;
   letter-spacing: 1px;
 }
 
-
-
+li {
+  font-family: $bodyFont;
+  font-weight: 400;
+  color: $secondaryColour;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px; 
+}
+.allContentContainer { 
+  box-shadow: 0px 0px 25px 2px $secondaryColour;
+  width: 75%;
+  margin: 20px auto; 
+  border-radius: 5px;
+  background: $primaryColour;
+}

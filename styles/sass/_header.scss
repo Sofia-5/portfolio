@@ -2,3 +2,18 @@
 /* Header Styles */ 
 /*****************/
 
+
+.aboutSection {
+  display: flex;
+  padding: 30px; 
+}
+
+div {
+  width: 100%;
+
+  .headshot {
+    border-radius: 10px;
+    width: 80%;
+  }
+
+}
