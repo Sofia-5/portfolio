@@ -1,0 +1,11 @@
+@import 'setup'; 
+@import 'variables'; 
+@import 'mixins';
+@import 'global';
+
+@import 'header';
+@import 'about';
+@import 'skills';
+@import 'footer';
+
+@import 'mediaQueries';
