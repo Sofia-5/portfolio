@@ -1,0 +1,116 @@
+/**************************/
+/* Contact Section Styles */ 
+/**************************/
+
+.contactSection {
+  margin: 0 50px 50px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+
+    .topForm {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .nameForm,
+      .emailForm {
+        width: 95%;
+
+        .name,
+        .email {
+          width: 100%;
+          font-family: $bodyFont;
+          font-weight: 300;
+          font-size: 1.6rem;
+          line-height: 2rem;
+          letter-spacing: 1px;
+        }
+        
+      }
+      .nameForm {
+        margin-right: 10px;
+      }
+      
+      .emailForm {
+        margin-left: 10px;
+      }
+    }
+
+    .bottomForm {
+      width: 100%;
+    }
+    
+    .message {
+      width: 100%;
+    }
+    
+    button {
+      background-color: $supAccent; 
+      color: $secondaryColour;
+      font-family: $bodyFont;
+      font-size: 2.5rem; 
+      letter-spacing: 2px;
+      font-weight: 400;
+      text-transform: uppercase;
+      border: 1px solid $secondaryColour; 
+      border-radius: 5px;
+      font-size: 1.6rem;
+      text-decoration: none;
+      padding: 18px 50px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+input, 
+textarea {
+  border: 1px solid $secondaryColour; 
+  background-color: $supAccent; 
+  padding: 20px; 
+  color: $supAccentTwo;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: $bodyFont;
+  border-radius: 5px;
+}
+
+::placeholder {
+  font-family: $bodyFont;
+  font-size: 1.8rem; 
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  border-color: $supAccentTwo; 
+}
+
+input:hover,
+textarea:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid $secondaryColour; 
+  background-color: $secondaryColour; 
+  color: $primaryColour;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+

@@ -1,3 +1,34 @@
 /************************/
 /* About Section Styles */ 
 /************************/
+
+
+.aboutSection {
+  padding: 45px 45px 50px; 
+
+
+.allAboutMe {
+  display: flex;
+  width: 100%;
+
+  .headShotContainer{
+    width: 45%;
+    margin-right: 30px;
+    
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+}
+
+  .aboutMeContent {
+    width: 100%;
+    text-align: left;
+
+    p:nth-child(2) {
+      padding: 20px 0 10px 0;
+  
+    }
+  }
+}

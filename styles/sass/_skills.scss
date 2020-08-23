@@ -1,23 +1,34 @@
-/*****************/
-/* Skills Styles */ 
-/*****************/
+/*************************/
+/* Skills Section Styles */ 
+/*************************/
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px; 
+.skillsSection {
+  padding: 0 45px 50px; 
 
-  li {
-    width: 30%;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px; 
 
-    i {
-      width: 100%;
-    }
+    li {
+      width: 30%;
+      padding: 10px;
 
-    img {
-      display: block; 
-      margin: 0 auto;
+      i {
+        width: 100%;
+        font-size: 5rem;
+      }
+
+      img {
+        display: block; 
+        margin: 0 auto;
+      }
+
+      p {
+        color: $secondaryColour;
+        font-size: 1.4rem;
+      }
     }
   }
 }
