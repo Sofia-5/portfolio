@@ -8,6 +8,23 @@
 //   margin: 0 auto;  
 // }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: $supAccent;
+  color: $secondaryColour;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid $secondaryColour;
+}
+
+.skip-link:focus {
+  left: 5px;
+  top: 5px;
+}
+
 body { 
   background: $supAccent;
   text-align: center; 
@@ -20,7 +37,7 @@ h1 {
 font-family: $headerOneFont;
 color: #ffffff; 
 font-weight: 700; 
-font-size: 5rem; 
+font-size: 5.5rem; 
 } 
 
 h2 {
@@ -89,7 +106,7 @@ span {
 .allContentContainer { 
   box-shadow: 0px 0px 25px 2px $secondaryColour;
   width: 80%;
-  margin: 25px auto; 
+  margin: 100px auto; 
   border-radius: 5px;
   background: $primaryColour;
 }
