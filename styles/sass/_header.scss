@@ -1,3 +1,35 @@
 /*****************/
 /* Header Styles */ 
 /*****************/
+
+.welcome {
+  height: 100vh;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+
+  h1, 
+  h3 {
+    text-align: center;
+    // content: attr(data-shadow);
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: -1;
+    text-shadow: none;
+  }
+
+}
+
+// .socialMedia {
+//   display: flex;
+//   align-content: center;
+
+//   .icon {
+//     float: left;
+//     padding: 20px;
+//     clear: both;
+//   }
+// }
+

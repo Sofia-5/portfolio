@@ -17,10 +17,12 @@
   <!-- HEADER BEGINS -->
   <!------------------->
   <header class="wrapper">  
+
     
-    <h1>Sofia Lau-Alves</h1>
-    <h3>Front-End Developer</h3>
-    
+    <div class="welcome">
+      <h1>Sofia Lau-Alves</h1>
+      <h3>Front-End Developer</h3>
+    </div>
   </header>
   <!-- HEADER ENDS --> 
 
@@ -40,7 +42,7 @@
             <div class="aboutMeContent">
               <p>I am a front-end web developer and part-time dog walker/sitter with a background in environment and sustainable development. I am a true "Builder" whether it be physical construction or on the web through code. I enjoy problem solving and developing solutions with a balance of practicality and creativity. Anything to do with fixing, space-saving, and/or making things work more efficiently, count me in!</p>
 
-              <p>I like to stay active by trying new things and helping others whenever possible, as I believe learning should never stop. In my spare time, I enjoy traveling, practicing Hot Yoga, playing sports, dancing (Hip-Hop & Latin), attending events, learning new skills, experimenting with healthy recipes, playing board games, and completing escape rooms. </p>
+              <p>I like to stay active by trying new things and helping others whenever possible, as I believe learning should never stop. In my spare time, I enjoy traveling, practising Hot Yoga, playing sports, dancing (Hip-Hop & Latin), attending events, learning new skills, experimenting with healthy recipes, playing board games, and completing escape rooms. </p>
             </div>
           </div>
         </section>
@@ -185,23 +187,57 @@
 
       <!-- CONTACT SECTION BEGINS -->
       <section class="contactSection">
-        <div>
-          <div>
-            <h2>Contact Me</h2> 
+        <h2>Contact Me</h2> 
+        <div class="socialsAndForm">
+          <div class="blurbAndSocials">
+            <h3>Thanks for stopping by!</h3>
+            <p> If you are interested in collborating on a project or have any questions about me or my projects, please feel free to contact me. I'd love to hear from you! </p>
+            <h4> 
+              <a href="mailto:SofiaCodes5@gmail.com" aria-label="link to my email" target="_top"> SofiaCodes5@gmail.com </a>
+            </h4> 
+              
+            <div class="socialMedia">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="">
+                      <i class="icon fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon fab fa-twitter"></i>
+                  </a> 
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="formOnly">
             <form action="https://formspree.io/xvownvjl" method="POST" class="form">
               <div class="topForm">
                 <div class="nameForm">
-                  <label for="name" class="sr-only"></label>
+                  <label for="name" class="sr-only">Name</label>
                   <input type="text" id="name" class="name" name="name" placeholder="Your Name*" required >
                 </div>
                 <div class="emailForm">
-                  <label for="Email" class="sr-only"></label>
+                  <label for="email" class="sr-only">Email</label>
                   <input type="text" id="email" class="email" name="_replyto"  placeholder="Your Email*" required >
                 </div>
               </div>
               <div class="bottomForm">
                 <label for="message" class="sr-only"></label>
-                <textarea name="message" id="message" class="message" placeholder="Message*"   max-Length="300" required></textarea>
+                <textarea name="message" id="message" class="message" placeholder="Message*"   max-Length="300" rows="8" required></textarea>
               </div>
               <button type="submit">Let's Chat</button>
             </form>

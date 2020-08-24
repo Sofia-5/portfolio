@@ -5,77 +5,117 @@
 .contactSection {
   margin: 0 50px 50px;
 
-  form {
+  .socialsAndForm {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
+    justify-content: space-between;
+    // align-items: center;
+    width: 100%;
 
-    .topForm {
+
+    .blurbAndSocials {
+      width: 45%; 
       display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 20px;
+      flex-direction: column;
+      text-align: left;
 
-      .nameForm,
-      .emailForm {
-        width: 95%;
+      h3 { 
+        padding: 20px 0;
+      }
 
-        .name,
-        .email {
+      h4 {
+        padding: 20px 0;
+      }
+
+      nav {
+        display: inline-block;
+        
+        ul {
+          display: flex;
+
+          li {
+            padding: 20px;
+
+            i {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+
+
+    .formOnly {
+      width: 53%;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+
+        .topForm {
+          display: flex;
+          justify-content: space-between;
           width: 100%;
-          font-family: $bodyFont;
-          font-weight: 300;
-          font-size: 1.6rem;
-          line-height: 2rem;
-          letter-spacing: 1px;
+          margin-bottom: 20px;
+
+          .nameForm,
+          .emailForm {
+            width: 95%;
+
+            .name,
+            .email {
+              width: 100%;
+            }
+            
+          }
+          .nameForm {
+            margin-right: 10px;
+          }
+          
+          .emailForm {
+            margin-left: 10px;
+          }
+        }
+
+        .bottomForm {
+          width: 100%;
         }
         
+        .message {
+          width: 100%;
+        }
+        
+        button {
+          background-color: $supAccent; 
+          color: $secondaryColour;
+          font-family: $bodyFont;
+          font-size: 2rem; 
+          letter-spacing: 2px;
+          font-weight: 400;
+          text-transform: uppercase;
+          border: 1px solid $secondaryColour; 
+          border-radius: 5px;
+          font-size: 1.6rem;
+          text-decoration: none;
+          padding: 15px 25px;
+          align-items: center;
+          margin-bottom: 50px;
+        }
       }
-      .nameForm {
-        margin-right: 10px;
-      }
-      
-      .emailForm {
-        margin-left: 10px;
-      }
-    }
-
-    .bottomForm {
-      width: 100%;
-    }
-    
-    .message {
-      width: 100%;
-    }
-    
-    button {
-      background-color: $supAccent; 
-      color: $secondaryColour;
-      font-family: $bodyFont;
-      font-size: 2.5rem; 
-      letter-spacing: 2px;
-      font-weight: 400;
-      text-transform: uppercase;
-      border: 1px solid $secondaryColour; 
-      border-radius: 5px;
-      font-size: 1.6rem;
-      text-decoration: none;
-      padding: 18px 50px;
-      align-items: center;
-      margin-bottom: 50px;
     }
   }
 }
-
 
 input, 
 textarea {
   border: 1px solid $secondaryColour; 
   background-color: $supAccent; 
-  padding: 20px; 
+  padding: 15px 20px; 
   color: $supAccentTwo;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
   font-size: 1.6rem;
   font-weight: 300;
   font-family: $bodyFont;
@@ -84,7 +124,7 @@ textarea {
 
 ::placeholder {
   font-family: $bodyFont;
-  font-size: 1.8rem; 
+  font-size: 1.6rem; 
   letter-spacing: 2px;
   font-weight: 300;
 }

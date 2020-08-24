@@ -285,7 +285,6 @@ h1 {
   color: #ffffff;
   font-weight: 700;
   font-size: 5rem;
-  margin: 60px 0px;
 }
 
 h2 {
@@ -293,19 +292,20 @@ h2 {
   color: #ffffff;
   font-weight: 500;
   font-size: 3.5rem;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
-h3,
-label,
-.label {
+h3 {
   font-family: "Noto Sans HK", sans-serif;
   color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
-h3,
-label {
-  font-size: 2.5rem;
+h4 {
+  font-family: "Karla", sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -323,7 +323,7 @@ p {
   font-weight: 300;
   color: #ffffff;
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   letter-spacing: 1px;
 }
 
@@ -353,8 +353,8 @@ span {
 .allContentContainer {
   -webkit-box-shadow: 0px 0px 25px 2px #ffc576;
           box-shadow: 0px 0px 25px 2px #ffc576;
-  width: 75%;
-  margin: 35px auto;
+  width: 80%;
+  margin: 25px auto;
   border-radius: 5px;
   background: #1f2336;
 }
@@ -362,6 +362,28 @@ span {
 /*****************/
 /* Header Styles */
 /*****************/
+.welcome {
+  height: 100vh;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.welcome h1,
+.welcome h3 {
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  z-index: -1;
+  text-shadow: none;
+}
+
 /************************/
 /* About Section Styles */
 /************************/
@@ -503,7 +525,59 @@ span {
   margin: 0 50px 50px;
 }
 
-.contactSection form {
+.contactSection .socialsAndForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contactSection .socialsAndForm .blurbAndSocials {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.contactSection .socialsAndForm .blurbAndSocials h3 {
+  padding: 20px 0;
+}
+
+.contactSection .socialsAndForm .blurbAndSocials h4 {
+  padding: 20px 0;
+}
+
+.contactSection .socialsAndForm .blurbAndSocials nav {
+  display: inline-block;
+}
+
+.contactSection .socialsAndForm .blurbAndSocials nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactSection .socialsAndForm .blurbAndSocials nav ul li {
+  padding: 20px;
+}
+
+.contactSection .socialsAndForm .blurbAndSocials nav ul li i {
+  font-size: 3rem;
+}
+
+.contactSection .socialsAndForm .formOnly {
+  width: 53%;
+}
+
+.contactSection .socialsAndForm .formOnly form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,7 +594,7 @@ span {
   width: 100%;
 }
 
-.contactSection form .topForm {
+.contactSection .socialsAndForm .formOnly form .topForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,44 +605,39 @@ span {
   margin-bottom: 20px;
 }
 
-.contactSection form .topForm .nameForm,
-.contactSection form .topForm .emailForm {
+.contactSection .socialsAndForm .formOnly form .topForm .nameForm,
+.contactSection .socialsAndForm .formOnly form .topForm .emailForm {
   width: 95%;
 }
 
-.contactSection form .topForm .nameForm .name,
-.contactSection form .topForm .nameForm .email,
-.contactSection form .topForm .emailForm .name,
-.contactSection form .topForm .emailForm .email {
+.contactSection .socialsAndForm .formOnly form .topForm .nameForm .name,
+.contactSection .socialsAndForm .formOnly form .topForm .nameForm .email,
+.contactSection .socialsAndForm .formOnly form .topForm .emailForm .name,
+.contactSection .socialsAndForm .formOnly form .topForm .emailForm .email {
   width: 100%;
-  font-family: "Noto Sans HK", sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  letter-spacing: 1px;
 }
 
-.contactSection form .topForm .nameForm {
+.contactSection .socialsAndForm .formOnly form .topForm .nameForm {
   margin-right: 10px;
 }
 
-.contactSection form .topForm .emailForm {
+.contactSection .socialsAndForm .formOnly form .topForm .emailForm {
   margin-left: 10px;
 }
 
-.contactSection form .bottomForm {
+.contactSection .socialsAndForm .formOnly form .bottomForm {
   width: 100%;
 }
 
-.contactSection form .message {
+.contactSection .socialsAndForm .formOnly form .message {
   width: 100%;
 }
 
-.contactSection form button {
+.contactSection .socialsAndForm .formOnly form button {
   background-color: #313552;
   color: #ffc576;
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
@@ -576,7 +645,7 @@ span {
   border-radius: 5px;
   font-size: 1.6rem;
   text-decoration: none;
-  padding: 18px 50px;
+  padding: 15px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -587,8 +656,10 @@ input,
 textarea {
   border: 1px solid #ffc576;
   background-color: #313552;
-  padding: 20px;
+  padding: 15px 20px;
   color: #ffffff;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
   font-size: 1.6rem;
   font-weight: 300;
   font-family: "Noto Sans HK", sans-serif;
@@ -597,28 +668,28 @@ textarea {
 
 ::-webkit-input-placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   font-weight: 300;
 }
 
 :-ms-input-placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   font-weight: 300;
 }
 
 ::-ms-input-placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   font-weight: 300;
 }
 
 ::placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   font-weight: 300;
 }
