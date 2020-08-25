@@ -3,9 +3,7 @@
 /*****************/
 
 header {
-  background-image:  linear-gradient(0deg,  rgba(49, 53, 82, 1) 10%, rgba(49, 53, 82, 0.5) 30%,
-  rgba(255, 255, 255, 0) 100%),  
-  url("../assets/leafBackground.jpg");
+  background-image:  linear-gradient(0deg,  rgba(49, 53, 82, 1) 10%, rgba(49, 53, 82, 0.5) 30%, rgba(255, 255, 255, 0) 100%),  url("../assets/leafBackground.jpg");
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -21,6 +19,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
   
     // h1, 
     // h3 {
@@ -32,9 +31,23 @@ header {
     //   z-index: -1;
     //   text-shadow: none;
     // }
-  
-
+    h1, 
+    h3 {
+      text-shadow: 2px 2px 1px $primaryColour;
+      margin-bottom: 2rem;
+    }
+    .scrollDownArrow {
+      position: absolute; 
+      bottom: 5rem;
+      i {
+        color: $supAccentTwo; 
+        font-size: 3rem;
+        text-shadow: 2px 2px 1px $primaryColour;
+      }
+    }
   }
+
+
 }
 
 

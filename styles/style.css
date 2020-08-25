@@ -402,6 +402,24 @@ header .welcome {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  position: relative;
+}
+
+header .welcome h1,
+header .welcome h3 {
+  text-shadow: 2px 2px 1px #1f2336;
+  margin-bottom: 2rem;
+}
+
+header .welcome .scrollDownArrow {
+  position: absolute;
+  bottom: 5rem;
+}
+
+header .welcome .scrollDownArrow i {
+  color: #ffffff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 1px #1f2336;
 }
 
 /************************/
@@ -513,12 +531,30 @@ header .welcome {
   margin-bottom: 15px;
 }
 
+.projectsSection .projectsContent .toolsUsed {
+  margin-bottom: 15px;
+}
+
 .projectsSection .projectsContent .toolsUsed li {
   display: inline-block;
   text-align: center;
 }
 
 .projectsSection .projectsContent .toolsUsed span {
+  margin: 0 10px;
+}
+
+.projectsSection .projectsContent .projectLinks a {
+  text-align: center;
+  color: #ffffff;
+}
+
+.projectsSection .projectsContent .projectLinks a:hover {
+  color: #acc421;
+  border-bottom: 1px solid #ffffff;
+}
+
+.projectsSection .projectsContent .projectLinks span {
   margin: 0 10px;
 }
 

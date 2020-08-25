@@ -32,6 +32,7 @@
       }
 
       .toolsUsed {
+        margin-bottom: 15px;
         li   {
           display: inline-block; 
           text-align: center;
@@ -40,6 +41,25 @@
           margin: 0 10px;
         }
       }
+      .projectLinks {
+        a {
+          text-align: center;
+          color: $supAccentTwo;
+          // text-shadow: 0.5px 2px 0.5px $primaryColour;
+        }
+
+        a:hover {
+          // font-weight: 500;
+          // text-shadow: 0.5px 2px 0.5px $supAccentTwo;
+          // text-decoration: underline 1px $supAccentTwo;
+          color: $supAccentThree;
+          border-bottom: 1px solid $supAccentTwo;
+        }
+        span {
+          margin: 0 10px;
+        }
+      }
+
     }
 }
 
@@ -53,8 +73,8 @@
   .projectsContent {
     text-align: right;
 
-    p {
-      // padding: 10px;
-    }
+    // p {
+    //   // padding: 10px;
+    // }
   }
 }
