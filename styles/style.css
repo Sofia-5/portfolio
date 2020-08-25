@@ -380,32 +380,28 @@ span {
 /* Header Styles */
 /*****************/
 header {
-  background-image: url("../assets/leafBackground.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #313552), color-stop(30%, rgba(49, 53, 82, 0.5)), to(rgba(255, 255, 255, 0))), url("../assets/leafBackground.jpg");
+  background-image: linear-gradient(0deg, #313552 10%, rgba(49, 53, 82, 0.5) 30%, rgba(255, 255, 255, 0) 100%), url("../assets/leafBackground.jpg");
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
 }
 
 header .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
-  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  z-index: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-}
-
-header .welcome h1,
-header .welcome h3 {
-  text-align: center;
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  z-index: -1;
-  text-shadow: none;
 }
 
 /************************/
@@ -754,4 +750,3 @@ footer {
 /*****************/
 /* Media Queries */
 /*****************/
-/*# sourceMappingURL=styles.css.map */

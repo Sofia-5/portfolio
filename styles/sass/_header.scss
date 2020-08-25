@@ -3,30 +3,37 @@
 /*****************/
 
 header {
-  @include backgroundGradient ();
-  @include backgroundImage ();
+  background-image:  linear-gradient(0deg,  rgba(49, 53, 82, 1) 10%, rgba(49, 53, 82, 0.5) 30%,
+  rgba(255, 255, 255, 0) 100%),  
+  url("../assets/leafBackground.jpg");
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
 
   .welcome {
+    // height: 100vh;
+    // transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    // z-index: 1;
+    // transition: all 0.5s ease-in-out;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    z-index: 1;
-    transition: all 0.5s ease-in-out;
-    position: relative;
   
-    h1, 
-    h3 {
-      text-align: center;
-      // content: attr(data-shadow);
-      position: absolute;
-      top: 150px;
-      left: 150px;
-      z-index: -1;
-      text-shadow: none;
-    }
+    // h1, 
+    // h3 {
+    //   text-align: center;
+    //   content: attr(data-shadow);
+    //   position: absolute;
+    //   top: 150px;
+    //   left: 150px;
+    //   z-index: -1;
+    //   text-shadow: none;
+    // }
   
+
   }
 }
 
