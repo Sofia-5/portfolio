@@ -1,13 +1,14 @@
 // ** JS CODE ** // 
 
 $(function () {  
-  App.init ();
+  portfolioApp.init ();
 })
 
-const App = {};
+const portfolioApp = {};
 
-App.init = function() {
-  App.eventListener();
+portfolioApp.init = function() {
+  portfolioApp.navListener();
+  portfolioApp.projectListener();
 }
 
 // NAV // 
@@ -16,10 +17,21 @@ App.init = function() {
 // The icon will change depending on the section the user is on. Either it will change in colour or will change to the title of the section. 
 // When the user hovers a icon, it will show the title of the section, which will replace the icon. 
 
-// Projects //
+// PROJECTS //
 // The projects will fade in and appear as the user scrolls to that section , leading with the image, and text following behind. 
 
 
-App.eventListener = function () {
+portfolioApp.navListener = function () {
+ $('body').on('scroll', function() {
+   
+   $().addClass
+ })
 
+ $('.eventScroll').on('click', function() {
+  $('#welcome').addClass('eventScroll');
+ })
 }
+
+portfolioApp.projectListener = function () {
+  $('.eventScroll').scroll()
+ }

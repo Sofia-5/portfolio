@@ -17,7 +17,7 @@
   <!------------------->
   <!-- HEADER BEGINS -->
   <!------------------->
-  <header class="wrapper">  
+  <header>  
     <div id="welcome" class="welcome">
       <div class="headerContent">
         <h1>Sofia Lau-Alves</h1>
@@ -33,32 +33,36 @@
       <ul>
         <li>
           <div class="eventScroll">Welcome!</div>
-          <a href="#welcome">
-            <i class="far fa-smile-beam"></i>
+          <a href="#welcome" title="Welcome!">
+            <!-- <i class="far fa-smile-beam"></i> -->
+            <i class="fab fa-envira"></i>
           </a>
         </li>
         <li>
           <div class="eventScroll">About Me</div>
-          <a href="#aboutMe">
-            <i class="fab fa-canadian-maple-leaf"></i>
+          <a href="#aboutMe" title="About Me">
+            <!-- <i class="fab fa-canadian-maple-leaf"></i> -->
+            <i class="fab fa-envira"></i>
           </a>
         </li>
         <li>
           <div class="eventScroll">Skills</div>
-          <a href="#skills">
-            <i class="fab fa-pagelines"></i>
+          <a href="#skills" title="Skills">
+            <!-- <i class="fab fa-pagelines"></i> -->
+            <i class="fab fa-envira"></i>
           </a>
         </li>
         <li>
           <div class="eventScroll">Projects</div>
-          <a href="#projects">
+          <a href="#projects" title="Projects">
             <i class="fab fa-envira"></i>
           </a>
         </li>
         <li>
           <div class="eventScroll">Contact Me</div>
-          <a href="#contactMe">
-            <i class="far fa-paper-plane"></i>
+          <a href="#contactMe" title="Contact Me">
+            <!-- <i class="far fa-paper-plane"></i> -->
+            <i class="fab fa-envira"></i>
           </a>
         </li>
       </ul>
@@ -70,7 +74,7 @@
   <!--- MAIN BEGINS --->
   <!------------------->
   <main> 
-    <div class="allContentContainer"> 
+    <div class="allContentContainer wrapper"> 
       <!-- ABOUT ME SECTION BEGINS -->
       <!-- <div class="wrapper"> -->
         <main id="maincontent"></main>
@@ -87,160 +91,158 @@
             </div>
           </div>
         </section>
- 
       <!-- ABOUT ME SECTION ENDS -->
 
       <!-- SKILLS SECTION BEGINS -->
-      <section id="skills" class="skillsSection wrapper">
-        <h2>Skills</h2>
-        <ul>
-          <li class="skillsIcon">
-            <i class="fab fa-html5" aria-hidden="true" title="HTML5 Icon"></i>
-            <p>HTML5</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fab fa-css3-alt" aria-hidden="true" title="CSS Icon"></i>
-            <p>CSS3</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fab fa-sass" aria-hidden="true" title="Sass Icon"></i>
-            <p>Sass</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fab fa-js" aria-hidden="true" title="JavaScript Icon"></i>
-            <p>JavaScript</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fab fa-react" aria-hidden="true" title="REACT Icon"></i>
-            <p>REACT</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="devicon-jquery-plain" aria-hidden="true" title="jQuery Icon"></i>
-            <p>jQuery</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fas fa-mobile-alt" aria-hidden="true" title="Responsive Design Icon"></i>
-            <p>Responsive</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fab fa-git-alt" aria-hidden="true" title="Git Icon"></i>
-            <p>Git</p>
-          </li>
-          <li class="skillsIcon">
-            <img src="assets/firebaseIcon.png" aria-hidden="true" alt="Firebase Icon"/>
-            <p>Firebase</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="devicon-visualstudio-plain" aria-hidden="true" title="Visual Studio Icon"></i>
-            <p>Visual Studio</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fas fa-universal-access" aria-hidden="true" title="Accessibility Icon"></i>
-            <p>Accessibility</p>
-          </li>
-          <li class="skillsIcon">
-            <i class="fas fa-terminal" aria-hidden="true" title="Terminal Icon"></i>
-            <p>Terminal</p>
-          </li>
-        </ul>
-
+      <section id="skills" class="skillsSection">
+        <div class="border">
+          <h2>Skills</h2>
+          <ul>
+            <li class="skillsIcon">
+              <i class="fab fa-html5" aria-hidden="true" title="HTML5 Icon"></i>
+              <p>HTML5</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fab fa-css3-alt" aria-hidden="true" title="CSS Icon"></i>
+              <p>CSS3</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fab fa-sass" aria-hidden="true" title="Sass Icon"></i>
+              <p>Sass</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fab fa-js" aria-hidden="true" title="JavaScript Icon"></i>
+              <p>JavaScript</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fab fa-react" aria-hidden="true" title="REACT Icon"></i>
+              <p>REACT</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="devicon-jquery-plain" aria-hidden="true" title="jQuery Icon"></i>
+              <p>jQuery</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fas fa-mobile-alt" aria-hidden="true" title="Responsive Design Icon"></i>
+              <p>Responsive</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fab fa-git-alt" aria-hidden="true" title="Git Icon"></i>
+              <p>Git</p>
+            </li>
+            <li class="skillsIcon">
+              <img src="assets/firebaseIcon.png" aria-hidden="true" alt="Firebase Icon"/>
+              <p>Firebase</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="devicon-visualstudio-plain" aria-hidden="true" title="Visual Studio Icon"></i>
+              <p>Visual Studio</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fas fa-universal-access" aria-hidden="true" title="Accessibility Icon"></i>
+              <p>Accessibility</p>
+            </li>
+            <li class="skillsIcon">
+              <i class="fas fa-terminal" aria-hidden="true" title="Terminal Icon"></i>
+              <p>Terminal</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- SKILLS SECTION ENDS -->
 
       <!-- PORTFOLIO SECTION BEGINS -->
       <section id="projects" class="projectsSection">
-        <div>
-          <h2>My Projects</h2>
-          <div class="allProjects">
-            <div class="imageContainer">
-              <a href="https://sofia-5.github.io/hit-workout-timer/" target="_blank" title="Clickable image to live Hit Workout Timer App">
-                <img src="assets/hitWorkoutTimer.png" alt="Hit Workout Timer">
-              </a>
-            </div>
-            <div class="projectsContent">
-              <h3>Hit Workout Timer</h3>
-              <p>This hit workout timer app allows users to customize the number of exercises and sets they would like for the workout. The idea came about as a request from a friend that I workout via video chat during the Quarenteen. This saved us time from having to press start and stop, and adjusting the time after each set.</p>
-            
-              <ul class="toolsUsed">
-                <li>JavaScript</li>
-                <span> | </span>
-                <li>jQuery</li>
-                <span> | </span>
-                <li>HTML5</li>
-                <span> | </span>
-                <li>CSS3</li>
-                <span> | </span>
-                <li>Sass</li>
-              </ul>
+        <h2>My Projects</h2>
+        <div class="allProjects">
+          <div class="imageContainer">
+            <a href="https://sofia-5.github.io/hit-workout-timer/" target="_blank" title="Clickable image to live Hit Workout Timer App">
+              <img src="assets/hitWorkoutTimer.png" alt="Hit Workout Timer">
+            </a>
+          </div>
+          <div class="projectsContent">
+            <h3>Hit Workout Timer</h3>
+            <p>This hit workout timer app allows users to customize the number of exercises and sets they would like for the workout. The idea came about as a request from a friend that I workout via video chat during the Quarenteen. This saved us time from having to press start and stop, and adjusting the time after each set.</p>
+          
+            <ul class="toolsUsed">
+              <li>JavaScript</li>
+              <span> | </span>
+              <li>jQuery</li>
+              <span> | </span>
+              <li>HTML5</li>
+              <span> | </span>
+              <li>CSS3</li>
+              <span> | </span>
+              <li>Sass</li>
+            </ul>
 
-              <div class="projectLinks"> 
-                <a href="https://sofia-5.github.io/hit-workout-timer/" target="_blank" title="Live link to Hit Workout Timer App"> View Live Site</a>
-                <span> | </span>
-                <a href="https://github.com/Sofia-5/hit-workout-timer" target="_blank" title="Link to Hit Workout Timer App Code on Github"> View Code </a>
-              </div>
+            <div class="projectLinks"> 
+              <a href="https://sofia-5.github.io/hit-workout-timer/" target="_blank" title="Live link to Hit Workout Timer App"> View Live Site</a>
+              <span> | </span>
+              <a href="https://github.com/Sofia-5/hit-workout-timer" target="_blank" title="Link to Hit Workout Timer App Code on Github"> View Code </a>
             </div>
           </div>
+        </div>
 
+        <div class="allProjects">
+          <div class="imageContainer">
+            <a href="https://flowerful.github.io/flowerful/" target="_blank" title="Clickable image to the live Flowerful App">
+              <img src="assets/flowerful.png" alt="Flowerful App">
+            </a>
+          </div>
+          <div class="projectsContent">
+            <h3>Flowerful</h3>
+            <p>Do you have a green thumb? This app allows users to search plants according to colour, helping users design the perfect garden with colour coordination. It features a side bar where users can save their favourite plants while they browse.</p>
+            <p>A pair programming project created with <a href="https://spencerdavis.io/" target="_blank"> Spencer Davis</a>.</p>
+            <ul class="toolsUsed">
+              <li>JavaScript</li>
+              <span> | </span>
+              <li>REST API</li>
+              <span> | </span>
+              <li>HTML5</li>
+              <span> | </span>
+              <li>CSS3</li>
+              <span> | </span>
+              <li>Sass</li>
+              <span> | </span>
+              <li>Git</li>
+            </ul>
+
+            <div class="projectLinks"> 
+              <a href="https://flowerful.github.io/flowerful/" target="_blank" title="Live link to Flowerful App"> View Live Site</a>
+              <span> | </span>
+              <a href="https://github.com/flowerful/flowerful.git" target="_blank" title="Link to Flowerful App Code on Github"> View Code </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
           <div class="allProjects">
             <div class="imageContainer">
-              <a href="https://flowerful.github.io/flowerful/" target="_blank" title="Clickable image to the live Flowerful App">
-                <img src="assets/flowerful.png" alt="Flowerful App">
+              <a href="https://sofia-5.github.io/a_sustainable_home/" target="_blank" title="Clickable image to the live A Sustainable Home App"> 
+                <img src="assets/aSustainableHome.png" alt="Sustainable Home App">
               </a>
             </div>
             <div class="projectsContent">
-              <h3>Flowerful</h3>
-              <p>Do you have a green thumb? This app allows users to search plants according to colour, helping users design the perfect garden with colour coordination. It features a side bar where users can save their favourite plants while they browse.</p>
-              <p>A pair programming project created with <a href="" target="_blank"> Spencer Davis </a></p>
+              <h3>A Sustainable Home</h3>
+              <p>Are you planning to purchase a new home or do some renovations to your home? Come pay a visit to my app where you can learn some tips on how to incorporate some eco-friendly practises and features to help you save on your energy and water bills, which also help improve the health of our planet.</p>
               <ul class="toolsUsed">
                 <li>JavaScript</li>
                 <span> | </span>
-                <li>REST API</li>
+                <li>REACT</li>
+                <span> | </span>
+                <li>Firebase</li>
                 <span> | </span>
                 <li>HTML5</li>
                 <span> | </span>
                 <li>CSS3</li>
-                <span> | </span>
-                <li>Sass</li>
                 <span> | </span>
                 <li>Git</li>
               </ul>
-
               <div class="projectLinks"> 
-                <a href="https://flowerful.github.io/flowerful/" target="_blank" title="Live link to Flowerful App"> View Live Site</a>
+                <a href="https://sofia-5.github.io/a_sustainable_home/" target="_blank" title="Live link to A Sustainable Home App"> View Live Site</a>
                 <span> | </span>
-                <a href="https://github.com/flowerful/flowerful.git" target="_blank" title="Link to Flowerful App Code on Github"> View Code </a>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="allProjects">
-              <div class="imageContainer">
-                <a href="https://sofia-5.github.io/a_sustainable_home/" target="_blank" title="Clickable image to the live A Sustainable Home App"> 
-                  <img src="assets/aSustainableHome.png" alt="Sustainable Home App">
-                </a>
-              </div>
-              <div class="projectsContent">
-                <h3>A Sustainable Home</h3>
-                <p>Are you planning to purchase a new home or do some renovations to your home? Come pay a visit to my app where you can learn some tips on how to incorporate some eco-friendly practises and features to help you save on your energy and water bills, which also help improve the health of our planet.</p>
-                <ul class="toolsUsed">
-                  <li>JavaScript</li>
-                  <span> | </span>
-                  <li>REACT</li>
-                  <span> | </span>
-                  <li>Firebase</li>
-                  <span> | </span>
-                  <li>HTML5</li>
-                  <span> | </span>
-                  <li>CSS3</li>
-                  <span> | </span>
-                  <li>Git</li>
-                </ul>
-                <div class="projectLinks"> 
-                  <a href="https://sofia-5.github.io/a_sustainable_home/" target="_blank" title="Live link to A Sustainable Home App"> View Live Site</a>
-                  <span> | </span>
-                  <a href="https://github.com/Sofia-5/a_sustainable_home" target="_blank" title="Link to A Sustainable Home App Code on Github"> View Code </a>
-                </div>
+                <a href="https://github.com/Sofia-5/a_sustainable_home" target="_blank" title="Link to A Sustainable Home App Code on Github"> View Code </a>
               </div>
             </div>
           </div>
@@ -265,7 +267,7 @@
                 <ul>
                   <li>
                     <a href="">
-                      <i class="icon fab fa-linkedin-in"></i>
+                      <i class="fab fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
@@ -318,7 +320,7 @@
   <!--- FOOTER BEGINS --->
   <!--------------------->
   <footer>
-    <div class="wrapper">
+    <div>
       <p>Copyright &copy; 2020 SofiaCodes5</p>
       <p>Created @ <a href="https://junocollege.com/" target="_blank">Juno College</a></p> 
     </div>

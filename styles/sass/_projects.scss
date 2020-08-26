@@ -1,67 +1,66 @@
 /***************************/
 /* Projects Section Styles */ 
 /***************************/
+.projectsSection h2 {
+  margin-bottom: 5px;
+}
 
-.projectsSection {
-  padding: 0 45px 50px;
+.allProjects {
+  display: flex;
+  width: 100%;
 
-  .allProjects {
-    display: flex;
-    width: 100%;
-  
-    .imageContainer{
-      width: 45%;
-      margin-right: 30px;
-      
-      img {
-        border-radius: 5px;
-        width: 100%;
-      }
+  .imageContainer{
+    width: 45%;
+    margin-right: 30px;
+    
+    img {
+      border-radius: 5px;
+      width: 100%;
     }
   }
-
-    .projectsContent {
-      width: 55%;
-      text-align: left;
-  
-      h3 {
-        margin-bottom: 15px;
-      }
-      p {
-        margin-bottom: 15px;
-      }
-
-      .toolsUsed {
-        margin-bottom: 15px;
-        li   {
-          display: inline-block; 
-          text-align: center;
-        }
-        span {
-          margin: 0 10px;
-        }
-      }
-      .projectLinks {
-        a {
-          text-align: center;
-          color: $supAccentTwo;
-          // text-shadow: 0.5px 2px 0.5px $primaryColour;
-        }
-
-        a:hover {
-          // font-weight: 500;
-          // text-shadow: 0.5px 2px 0.5px $supAccentTwo;
-          // text-decoration: underline 1px $supAccentTwo;
-          color: $supAccentThree;
-          border-bottom: 1px solid $supAccentTwo;
-        }
-        span {
-          margin: 0 10px;
-        }
-      }
-
-    }
 }
+
+.projectsContent {
+  width: 55%;
+  text-align: left;
+
+  h3 {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+
+  .toolsUsed {
+    margin-bottom: 15px;
+    li   {
+      display: inline-block; 
+      text-align: center;
+    }
+    span {
+      margin: 0 10px;
+    }
+  }
+  .projectLinks {
+    a {
+      text-align: center;
+      color: $supAccentTwo;
+      // text-shadow: 0.5px 2px 0.5px $primaryColour;
+    }
+
+    a:hover {
+      // font-weight: 500;
+      // text-shadow: 0.5px 2px 0.5px $supAccentTwo;
+      // text-decoration: underline 1px $supAccentTwo;
+      color: $supAccentThree;
+      border-bottom: 1px solid $supAccentTwo;
+    }
+    span {
+      margin: 0 10px;
+    }
+  }
+}
+
 
 .allProjects:nth-child(3) {
   flex-direction: row-reverse;
@@ -73,8 +72,13 @@
   .projectsContent {
     text-align: right;
 
-    // p {
-    //   // padding: 10px;
-    // }
+    a {
+      color: $supAccentTwo;
+    }
+
+    a:hover {
+      color: $supAccentThree;
+      border-bottom: 1px solid $supAccentTwo;
+    }
   }
 }

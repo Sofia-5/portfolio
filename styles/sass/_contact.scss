@@ -3,110 +3,110 @@
 /**************************/
 
 .contactSection {
-  margin: 0 50px 50px;
+  margin: 60px 0 0 0;
+}
 
-  .socialsAndForm {
-    display: flex;
-    justify-content: space-between;
-    // align-items: center;
-    width: 100%;
+.socialsAndForm {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  width: 100%;
+}
 
+.blurbAndSocials {
+  width: 45%; 
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 
-    .blurbAndSocials {
-      width: 45%; 
-      display: flex;
-      flex-direction: column;
-      text-align: left;
+  h3 { 
+    padding: 20px 0;
+  }
 
-      h3 { 
-        padding: 20px 0;
-      }
+  h4 {
+    padding: 20px 0;
+  }
+}
 
-      h4 {
-        padding: 20px 0;
-      }
+.blurbAndSocials nav {
+    display: inline-block;
+} 
 
-      nav {
-        display: inline-block;
-        
-        ul {
-          display: flex;
+.blurbAndSocials ul {
+  display: flex;
 
-          li {
-            padding: 20px;
+  li {
+    padding: 0 30px 0 0;
 
-            i {
-              font-size: 3rem;
-            }
-          }
-        }
-      }
-    }
-
-
-    .formOnly {
-      width: 53%;
-
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%; 
-
-        .topForm {
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-          margin-bottom: 20px;
-
-          .nameForm,
-          .emailForm {
-            width: 95%;
-
-            .name,
-            .email {
-              width: 100%;
-            }
-            
-          }
-          .nameForm {
-            margin-right: 10px;
-          }
-          
-          .emailForm {
-            margin-left: 10px;
-          }
-        }
-
-        .bottomForm {
-          width: 100%;
-        }
-        
-        .message {
-          width: 100%;
-        }
-        
-        button {
-          background-color: $supAccent; 
-          color: $secondaryColour;
-          font-family: $bodyFont;
-          font-size: 2rem; 
-          letter-spacing: 2px;
-          font-weight: 400;
-          text-transform: uppercase;
-          border: 1px solid $secondaryColour; 
-          border-radius: 5px;
-          font-size: 1.6rem;
-          text-decoration: none;
-          padding: 15px 25px;
-          align-items: center;
-          margin-bottom: 50px;
-        }
-      }
+    i {
+      font-size: 3rem;
     }
   }
 }
+  
+
+
+.formOnly {
+  width: 53%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+}
+
+.topForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .nameForm,
+  .emailForm {
+    width: 95%;
+
+    .name,
+    .email {
+      width: 100%;
+    }
+    
+  }
+  .nameForm {
+    margin-right: 10px;
+  }
+  
+  .emailForm {
+    margin-left: 10px;
+  }
+}
+
+.bottomForm {
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+}
+
+button {
+  background-color: $supAccent; 
+  color: $secondaryColour;
+  font-family: $bodyFont;
+  font-size: 2rem; 
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid $secondaryColour; 
+  border-radius: 5px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 15px 25px;
+  align-items: center;
+}
+
 
 input, 
 textarea {
@@ -114,9 +114,9 @@ textarea {
   background-color: $supAccent; 
   padding: 15px 20px; 
   color: $supAccentTwo;
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   letter-spacing: 1px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 300;
   font-family: $bodyFont;
   border-radius: 5px;
@@ -124,9 +124,10 @@ textarea {
 
 ::placeholder {
   font-family: $bodyFont;
-  font-size: 1.6rem; 
-  letter-spacing: 2px;
+  font-size: 1.4rem; 
+  letter-spacing: 1.8px;
   font-weight: 300;
+  color: $supAccentTwo;
 }
 
 input:focus,

@@ -3,38 +3,63 @@
 /*****************/
 
 @media (max-width: 1200px) {
+  
+  /* Global Styles */ 
+  .wrapper {
+    margin: 90px auto; 
+  }
+
+  /* About Me Section Styles */ 
   .allAboutMe {
     flex-direction: column;
     align-items: center;
   
     .headShotContainer{
       margin-bottom: 30px;
+      margin-right: 0px;
     }
   }
 
+  /* Projects Section Styles */ 
   .projectsSection {
-    padding: 0 0 50px;
-  
+
     .allProjects {
       flex-direction: column;
       align-items: center;
       justify-content: center;
     
       .imageContainer{
-        width: 60%;
-        margin-right: 0;
+        width: 80%;
+        margin-right: 0px;
+        margin-left: 0px;
         margin-bottom: 20px;
       }
 
-      
       .projectsContent {
         width: 85%;
         text-align: center;
       } 
-      .allProjects:nth-child(3) {
-        margin-left: 0;
+    }
+
+    .allProjects:nth-child(3) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .imageContainer {
+        margin-left: 0px;
+      }
+
+      .projectsContent {
+        width: 85%;
+        text-align: center;
       }
     }
+  }
+
+  /* Contact Section Styles */ 
+  .blurbAndSocials {
+    width: 40%;
   }
 
   .topForm {
@@ -42,13 +67,12 @@
     align-items: center;
 
     .nameForm {
-      margin-right:  -10px;
+      margin-right:  0px;
       margin-bottom: 20px;
-
     }
     
     .emailForm {
-      margin-left: -10px;
+      margin-left: 0px;
   
     }
     .nameForm,
@@ -56,11 +80,202 @@
       width: 100%;
     }
   }
-
 }
 
+@media (max-width: 1000px) { 
+
+  /* Global Styles */ 
+  .wrapper { 
+    width: 75%;
+    margin: 60px auto; 
+  }
+
+  /* About Me Styles */ 
+  .aboutSection .allAboutMe { 
+    .headShotContainer {
+      width: 60%;
+    }
+  }
+
+  /* Projects Section Styles */ 
+  .projectsSection {
+    .allProjects {
+      .imageContainer{
+        width: 90%;
+      }
+    }
+  }
+
+  /* Contact Section Styles */ 
+  .socialsAndForm {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blurbAndSocials {
+    width: 100%; 
+    text-align: center;
+  
+    h3 { 
+      padding: 0px;
+    }
+
+    p {
+      padding: 15px 0;
+    }
+  
+    h4 {
+      padding: 0px;
+    }
+  }
+
+  .blurbAndSocials ul li {
+      padding: 20px 15px 40px;
+    }
+  
+  .formOnly {
+    width: 100%;
+  }
+
+  .topForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  
+    .nameForm,
+    .emailForm {
+      width: 95%;
+  
+      .name,
+      .email {
+        width: 100%;
+      }
+      
+    }
+    .nameForm {
+      margin-right: 10px;
+      margin-bottom: 0px;
+    }
+    
+    .emailForm {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 880px) { 
+
+  /* Global Styles */ 
+  .allContentContainer { 
+    width: 72%;
+    margin: 55px auto; 
+  }
+  
+  /* About Me Styles */ 
+  .aboutSection .allAboutMe { 
+    .headShotContainer {
+      width: 60%;
+    }
+  }
+
+  /* Projects Section Styles */ 
+  .projectsSection {
+    .allProjects {
+      .imageContainer{
+        width: 100%;
+      }
+
+      .projectsContent {
+        width: 100%;
+      } 
+    }
+
+      .projectsContent {
+        width: 100%;
+      }
+    }
+
+  }
+
+@media (max-width: 700px) {
+    
+  /* Global Styles */ 
+  .wrapper {
+    width: 85%;
+    margin: 60px auto; 
+    padding: 35px;
+  }
+
+  /* Nav Styles */ 
+  .nav {
+    visibility: hidden;
+  }
+
+  h1 {  
+    font-size: 5.5rem; 
+    } 
+
+  h3 {
+    font-size: 2rem; 
+  }
 
 
-@media (max-width: 320px) { 
+  /* Contact Section Styles */ 
+  .topForm {
+    flex-direction: column;
+    align-items: center;
 
+    .nameForm {
+      margin-right:  0px;
+      margin-bottom: 20px;
+    }
+    
+    .emailForm {
+      margin-left: 0px;
+  
+    }
+    .nameForm,
+    .emailForm {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* Global Styles */ 
+  h1 {  
+    font-size: 5rem; 
+    } 
+
+  /* About Me Styles */ 
+  .aboutSection .allAboutMe { 
+    .headShotContainer {
+      width: 100%;
+    }
+  }
+
+  /* About Me Styles */ 
+  .skillsSection {
+    margin: 40px 0;
+  }
+
+  .border ul {   
+    li {
+      width: 40%;
+      padding: 10px 0px;
+
+      i {
+        width: 100%;
+        font-size: 3.5rem;
+        text-align: center;
+      }
+  
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }

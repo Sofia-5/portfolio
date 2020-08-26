@@ -3,24 +3,29 @@
 /*********************/
 body { 
   position: relative;
+}
 
-  .nav {
-    position: fixed;
-    right: 15px;
-    top: 28%;
+.nav {
+  position: fixed;
+  right: 15px;
+  top: 28%;
 
-    li {
-      padding: 10px 0;
+  li {
+    padding: 10px 0;
 
-      .eventScroll {
-        visibility: hidden;
-      }
+    .eventScroll {
+      visibility: hidden;
+    }
 
-      i {
-        font-size: 3rem;
-        color: $supAccentTwo;
-        text-shadow: 2px 2px 1px $primaryColour;
-      }
+    a {
+      font-size: 3rem;
+      color: $supAccentTwo;
+      text-shadow: 2px 2px 1px $primaryColour;
+    }
+
+    a:hover {
+      color: $supAccentThree;
     }
   }
 }
+

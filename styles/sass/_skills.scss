@@ -3,32 +3,41 @@
 /*************************/
 
 .skillsSection {
-  padding: 0 45px 50px; 
+  margin: 60px 0;
+}
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px; 
+.border {
+  border: 1px solid $secondaryColour;
+  border-radius: 10px;
+  padding-bottom: 20px;
 
-    li {
-      width: 30%;
-      padding: 10px;
+  h2 {
+    margin-top: 30px;
+  }
+}
 
-      i {
-        width: 100%;
-        font-size: 5rem;
-      }
+.border ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  li {
+    width: 30%;
+    padding: 10px;
 
-      img {
-        display: block; 
-        margin: 0 auto;
-      }
+    i {
+      width: 100%;
+      font-size: 5rem;
+    }
 
-      p {
-        color: $secondaryColour;
-        font-size: 1.4rem;
-      }
+    img {
+      display: block; 
+      margin: 0 auto;
+    }
+
+    p {
+      color: $secondaryColour;
+      font-size: 1.4rem;
     }
   }
 }

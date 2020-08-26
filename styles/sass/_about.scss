@@ -2,11 +2,6 @@
 /* About Section Styles */ 
 /************************/
 
-
-.aboutSection {
-  padding: 45px 45px 50px; 
-
-
 .allAboutMe {
   display: flex;
   width: 100%;
@@ -16,7 +11,7 @@
     margin-right: 30px;
     
     img {
-      border-radius: 5px;
+      border-radius: 10px;
       width: 100%;
     }
   }
@@ -31,4 +26,3 @@
   
     }
   }
-}

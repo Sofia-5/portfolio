@@ -330,7 +330,7 @@ a {
   font-family: "Noto Sans HK", sans-serif;
   font-weight: 400;
   color: #ffc576;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.8rem;
   letter-spacing: 1px;
 }
@@ -370,10 +370,14 @@ span {
 .allContentContainer {
   -webkit-box-shadow: 0px 0px 25px 2px #ffc576;
           box-shadow: 0px 0px 25px 2px #ffc576;
+  border-radius: 10px;
+  background: #1f2336;
+}
+
+.wrapper {
   width: 80%;
   margin: 100px auto;
-  border-radius: 5px;
-  background: #1f2336;
+  padding: 60px;
 }
 
 /*****************/
@@ -387,7 +391,7 @@ header {
   background-attachment: fixed;
 }
 
-header .welcome {
+.welcome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,18 +409,18 @@ header .welcome {
   position: relative;
 }
 
-header .welcome h1,
-header .welcome h3 {
+.welcome h1,
+.welcome h3 {
   text-shadow: 2px 2px 1px #1f2336;
   margin-bottom: 2rem;
 }
 
-header .welcome .scrollDownArrow {
+.welcome .scrollDownArrow {
   position: absolute;
   bottom: 5rem;
 }
 
-header .welcome .scrollDownArrow i {
+.welcome .scrollDownArrow i {
   color: #ffffff;
   font-size: 3rem;
   text-shadow: 2px 2px 1px #1f2336;
@@ -429,56 +433,56 @@ body {
   position: relative;
 }
 
-body .nav {
+.nav {
   position: fixed;
   right: 15px;
   top: 28%;
 }
 
-body .nav li {
+.nav li {
   padding: 10px 0;
 }
 
-body .nav li .eventScroll {
+.nav li .eventScroll {
   visibility: hidden;
 }
 
-body .nav li i {
+.nav li a {
   font-size: 3rem;
   color: #ffffff;
   text-shadow: 2px 2px 1px #1f2336;
 }
 
+.nav li a:hover {
+  color: #acc421;
+}
+
 /************************/
 /* About Section Styles */
 /************************/
-.aboutSection {
-  padding: 45px 45px 50px;
-}
-
-.aboutSection .allAboutMe {
+.allAboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.aboutSection .allAboutMe .headShotContainer {
+.allAboutMe .headShotContainer {
   width: 45%;
   margin-right: 30px;
 }
 
-.aboutSection .allAboutMe .headShotContainer img {
-  border-radius: 5px;
+.allAboutMe .headShotContainer img {
+  border-radius: 10px;
   width: 100%;
 }
 
-.aboutSection .aboutMeContent {
+.aboutMeContent {
   width: 100%;
   text-align: left;
 }
 
-.aboutSection .aboutMeContent p:nth-child(2) {
+.aboutMeContent p:nth-child(2) {
   padding: 20px 0 10px 0;
 }
 
@@ -486,37 +490,46 @@ body .nav li i {
 /* Skills Section Styles */
 /*************************/
 .skillsSection {
-  padding: 0 45px 50px;
+  margin: 60px 0;
 }
 
-.skillsSection ul {
+.border {
+  border: 1px solid #ffc576;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.border h2 {
+  margin-top: 30px;
+}
+
+.border ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.skillsSection ul li {
+.border ul li {
   width: 30%;
   padding: 10px;
 }
 
-.skillsSection ul li i {
+.border ul li i {
   width: 100%;
   font-size: 5rem;
 }
 
-.skillsSection ul li img {
+.border ul li img {
   display: block;
   margin: 0 auto;
 }
 
-.skillsSection ul li p {
+.border ul li p {
   color: #ffc576;
   font-size: 1.4rem;
 }
@@ -524,64 +537,64 @@ body .nav li i {
 /***************************/
 /* Projects Section Styles */
 /***************************/
-.projectsSection {
-  padding: 0 45px 50px;
+.projectsSection h2 {
+  margin-bottom: 5px;
 }
 
-.projectsSection .allProjects {
+.allProjects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.projectsSection .allProjects .imageContainer {
+.allProjects .imageContainer {
   width: 45%;
   margin-right: 30px;
 }
 
-.projectsSection .allProjects .imageContainer img {
+.allProjects .imageContainer img {
   border-radius: 5px;
   width: 100%;
 }
 
-.projectsSection .projectsContent {
+.projectsContent {
   width: 55%;
   text-align: left;
 }
 
-.projectsSection .projectsContent h3 {
+.projectsContent h3 {
   margin-bottom: 15px;
 }
 
-.projectsSection .projectsContent p {
+.projectsContent p {
   margin-bottom: 15px;
 }
 
-.projectsSection .projectsContent .toolsUsed {
+.projectsContent .toolsUsed {
   margin-bottom: 15px;
 }
 
-.projectsSection .projectsContent .toolsUsed li {
+.projectsContent .toolsUsed li {
   display: inline-block;
   text-align: center;
 }
 
-.projectsSection .projectsContent .toolsUsed span {
+.projectsContent .toolsUsed span {
   margin: 0 10px;
 }
 
-.projectsSection .projectsContent .projectLinks a {
+.projectsContent .projectLinks a {
   text-align: center;
   color: #ffffff;
 }
 
-.projectsSection .projectsContent .projectLinks a:hover {
+.projectsContent .projectLinks a:hover {
   color: #acc421;
   border-bottom: 1px solid #ffffff;
 }
 
-.projectsSection .projectsContent .projectLinks span {
+.projectsContent .projectLinks span {
   margin: 0 10px;
 }
 
@@ -601,14 +614,23 @@ body .nav li i {
   text-align: right;
 }
 
+.allProjects:nth-child(3) .projectsContent a {
+  color: #ffffff;
+}
+
+.allProjects:nth-child(3) .projectsContent a:hover {
+  color: #acc421;
+  border-bottom: 1px solid #ffffff;
+}
+
 /**************************/
 /* Contact Section Styles */
 /**************************/
 .contactSection {
-  margin: 0 50px 50px;
+  margin: 60px 0 0 0;
 }
 
-.contactSection .socialsAndForm {
+.socialsAndForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,7 +640,7 @@ body .nav li i {
   width: 100%;
 }
 
-.contactSection .socialsAndForm .blurbAndSocials {
+.blurbAndSocials {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,37 +652,37 @@ body .nav li i {
   text-align: left;
 }
 
-.contactSection .socialsAndForm .blurbAndSocials h3 {
+.blurbAndSocials h3 {
   padding: 20px 0;
 }
 
-.contactSection .socialsAndForm .blurbAndSocials h4 {
+.blurbAndSocials h4 {
   padding: 20px 0;
 }
 
-.contactSection .socialsAndForm .blurbAndSocials nav {
+.blurbAndSocials nav {
   display: inline-block;
 }
 
-.contactSection .socialsAndForm .blurbAndSocials nav ul {
+.blurbAndSocials ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contactSection .socialsAndForm .blurbAndSocials nav ul li {
-  padding: 20px;
+.blurbAndSocials ul li {
+  padding: 0 30px 0 0;
 }
 
-.contactSection .socialsAndForm .blurbAndSocials nav ul li i {
+.blurbAndSocials ul li i {
   font-size: 3rem;
 }
 
-.contactSection .socialsAndForm .formOnly {
+.formOnly {
   width: 53%;
 }
 
-.contactSection .socialsAndForm .formOnly form {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,7 +699,7 @@ body .nav li i {
   width: 100%;
 }
 
-.contactSection .socialsAndForm .formOnly form .topForm {
+.topForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,35 +710,35 @@ body .nav li i {
   margin-bottom: 20px;
 }
 
-.contactSection .socialsAndForm .formOnly form .topForm .nameForm,
-.contactSection .socialsAndForm .formOnly form .topForm .emailForm {
+.topForm .nameForm,
+.topForm .emailForm {
   width: 95%;
 }
 
-.contactSection .socialsAndForm .formOnly form .topForm .nameForm .name,
-.contactSection .socialsAndForm .formOnly form .topForm .nameForm .email,
-.contactSection .socialsAndForm .formOnly form .topForm .emailForm .name,
-.contactSection .socialsAndForm .formOnly form .topForm .emailForm .email {
+.topForm .nameForm .name,
+.topForm .nameForm .email,
+.topForm .emailForm .name,
+.topForm .emailForm .email {
   width: 100%;
 }
 
-.contactSection .socialsAndForm .formOnly form .topForm .nameForm {
+.topForm .nameForm {
   margin-right: 10px;
 }
 
-.contactSection .socialsAndForm .formOnly form .topForm .emailForm {
+.topForm .emailForm {
   margin-left: 10px;
 }
 
-.contactSection .socialsAndForm .formOnly form .bottomForm {
+.bottomForm {
   width: 100%;
 }
 
-.contactSection .socialsAndForm .formOnly form .message {
+.message {
   width: 100%;
 }
 
-.contactSection .socialsAndForm .formOnly form button {
+button {
   background-color: #313552;
   color: #ffc576;
   font-family: "Noto Sans HK", sans-serif;
@@ -732,7 +754,6 @@ body .nav li i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
 }
 
 input,
@@ -741,9 +762,9 @@ textarea {
   background-color: #313552;
   padding: 15px 20px;
   color: #ffffff;
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   letter-spacing: 1px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 300;
   font-family: "Noto Sans HK", sans-serif;
   border-radius: 5px;
@@ -751,30 +772,34 @@ textarea {
 
 ::-webkit-input-placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
+  font-size: 1.4rem;
+  letter-spacing: 1.8px;
   font-weight: 300;
+  color: #ffffff;
 }
 
 :-ms-input-placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
+  font-size: 1.4rem;
+  letter-spacing: 1.8px;
   font-weight: 300;
+  color: #ffffff;
 }
 
 ::-ms-input-placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
+  font-size: 1.4rem;
+  letter-spacing: 1.8px;
   font-weight: 300;
+  color: #ffffff;
 }
 
 ::placeholder {
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
+  font-size: 1.4rem;
+  letter-spacing: 1.8px;
   font-weight: 300;
+  color: #ffffff;
 }
 
 input:focus,
@@ -814,6 +839,11 @@ footer {
 /* Media Queries */
 /*****************/
 @media (max-width: 1200px) {
+  /* Global Styles */
+  .wrapper {
+    margin: 90px auto;
+  }
+  /* About Me Section Styles */
   .allAboutMe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -825,10 +855,9 @@ footer {
   }
   .allAboutMe .headShotContainer {
     margin-bottom: 30px;
+    margin-right: 0px;
   }
-  .projectsSection {
-    padding: 0 0 50px;
-  }
+  /* Projects Section Styles */
   .projectsSection .allProjects {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -842,16 +871,37 @@ footer {
             justify-content: center;
   }
   .projectsSection .allProjects .imageContainer {
-    width: 60%;
-    margin-right: 0;
+    width: 80%;
+    margin-right: 0px;
+    margin-left: 0px;
     margin-bottom: 20px;
   }
   .projectsSection .allProjects .projectsContent {
     width: 85%;
     text-align: center;
   }
-  .projectsSection .allProjects .allProjects:nth-child(3) {
-    margin-left: 0;
+  .projectsSection .allProjects:nth-child(3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projectsSection .allProjects:nth-child(3) .imageContainer {
+    margin-left: 0px;
+  }
+  .projectsSection .allProjects:nth-child(3) .projectsContent {
+    width: 85%;
+    text-align: center;
+  }
+  /* Contact Section Styles */
+  .blurbAndSocials {
+    width: 40%;
   }
   .topForm {
     -webkit-box-orient: vertical;
@@ -863,14 +913,179 @@ footer {
             align-items: center;
   }
   .topForm .nameForm {
-    margin-right: -10px;
+    margin-right: 0px;
     margin-bottom: 20px;
   }
   .topForm .emailForm {
-    margin-left: -10px;
+    margin-left: 0px;
   }
   .topForm .nameForm,
   .topForm .emailForm {
     width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Global Styles */
+  .wrapper {
+    width: 75%;
+    margin: 60px auto;
+  }
+  /* About Me Styles */
+  .aboutSection .allAboutMe .headShotContainer {
+    width: 60%;
+  }
+  /* Projects Section Styles */
+  .projectsSection .allProjects .imageContainer {
+    width: 90%;
+  }
+  /* Contact Section Styles */
+  .socialsAndForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blurbAndSocials {
+    width: 100%;
+    text-align: center;
+  }
+  .blurbAndSocials h3 {
+    padding: 0px;
+  }
+  .blurbAndSocials p {
+    padding: 15px 0;
+  }
+  .blurbAndSocials h4 {
+    padding: 0px;
+  }
+  .blurbAndSocials ul li {
+    padding: 20px 15px 40px;
+  }
+  .formOnly {
+    width: 100%;
+  }
+  .topForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .topForm .nameForm,
+  .topForm .emailForm {
+    width: 95%;
+  }
+  .topForm .nameForm .name,
+  .topForm .nameForm .email,
+  .topForm .emailForm .name,
+  .topForm .emailForm .email {
+    width: 100%;
+  }
+  .topForm .nameForm {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  .topForm .emailForm {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 880px) {
+  /* Global Styles */
+  .allContentContainer {
+    width: 72%;
+    margin: 55px auto;
+  }
+  /* About Me Styles */
+  .aboutSection .allAboutMe .headShotContainer {
+    width: 60%;
+  }
+  /* Projects Section Styles */
+  .projectsSection .allProjects .imageContainer {
+    width: 100%;
+  }
+  .projectsSection .allProjects .projectsContent {
+    width: 100%;
+  }
+  .projectsSection .projectsContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Global Styles */
+  .wrapper {
+    width: 85%;
+    margin: 60px auto;
+    padding: 35px;
+  }
+  /* Nav Styles */
+  .nav {
+    visibility: hidden;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  /* Contact Section Styles */
+  .topForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topForm .nameForm {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .topForm .emailForm {
+    margin-left: 0px;
+  }
+  .topForm .nameForm,
+  .topForm .emailForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Global Styles */
+  h1 {
+    font-size: 5rem;
+  }
+  /* About Me Styles */
+  .aboutSection .allAboutMe .headShotContainer {
+    width: 100%;
+  }
+  /* About Me Styles */
+  .skillsSection {
+    margin: 40px 0;
+  }
+  .border ul li {
+    width: 40%;
+    padding: 10px 0px;
+  }
+  .border ul li i {
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .border ul li p {
+    font-size: 1.1rem;
   }
 }
