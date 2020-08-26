@@ -301,7 +301,7 @@ h1 {
   font-family: "Noto Serif", serif;
   color: #ffffff;
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -419,6 +419,33 @@ header .welcome .scrollDownArrow {
 header .welcome .scrollDownArrow i {
   color: #ffffff;
   font-size: 3rem;
+  text-shadow: 2px 2px 1px #1f2336;
+}
+
+/*********************/
+/* Navagation Styles */
+/*********************/
+body {
+  position: relative;
+}
+
+body .nav {
+  position: fixed;
+  right: 15px;
+  top: 28%;
+}
+
+body .nav li {
+  padding: 10px 0;
+}
+
+body .nav li .eventScroll {
+  visibility: hidden;
+}
+
+body .nav li i {
+  font-size: 3rem;
+  color: #ffffff;
   text-shadow: 2px 2px 1px #1f2336;
 }
 
@@ -786,3 +813,64 @@ footer {
 /*****************/
 /* Media Queries */
 /*****************/
+@media (max-width: 1200px) {
+  .allAboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .allAboutMe .headShotContainer {
+    margin-bottom: 30px;
+  }
+  .projectsSection {
+    padding: 0 0 50px;
+  }
+  .projectsSection .allProjects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projectsSection .allProjects .imageContainer {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .projectsSection .allProjects .projectsContent {
+    width: 85%;
+    text-align: center;
+  }
+  .projectsSection .allProjects .allProjects:nth-child(3) {
+    margin-left: 0;
+  }
+  .topForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topForm .nameForm {
+    margin-right: -10px;
+    margin-bottom: 20px;
+  }
+  .topForm .emailForm {
+    margin-left: -10px;
+  }
+  .topForm .nameForm,
+  .topForm .emailForm {
+    width: 100%;
+  }
+}

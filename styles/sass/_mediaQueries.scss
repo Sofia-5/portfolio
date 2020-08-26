@@ -2,9 +2,63 @@
 /* Media Queries */ 
 /*****************/
 
-@media (max-width: 1119px) {
+@media (max-width: 1200px) {
+  .allAboutMe {
+    flex-direction: column;
+    align-items: center;
   
+    .headShotContainer{
+      margin-bottom: 30px;
+    }
+  }
+
+  .projectsSection {
+    padding: 0 0 50px;
+  
+    .allProjects {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+      .imageContainer{
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      
+      .projectsContent {
+        width: 85%;
+        text-align: center;
+      } 
+      .allProjects:nth-child(3) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .topForm {
+    flex-direction: column;
+    align-items: center;
+
+    .nameForm {
+      margin-right:  -10px;
+      margin-bottom: 20px;
+
+    }
+    
+    .emailForm {
+      margin-left: -10px;
+  
+    }
+    .nameForm,
+    .emailForm {
+      width: 100%;
+    }
+  }
+
 }
+
 
 
 @media (max-width: 320px) { 
