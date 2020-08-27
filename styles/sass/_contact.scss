@@ -37,11 +37,11 @@
   }
 }
 
-.blurbAndSocials nav {
+.socialMedia nav {
   display: inline-block;
 } 
 
-.blurbAndSocials ul {
+.socialMedia ul {
   display: flex;
 
   li {
@@ -66,8 +66,6 @@
   }
 }
   
-
-
 .formOnly {
   width: 53%;
 }
@@ -121,7 +119,7 @@ button {
   letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
-  border: 1px solid $secondaryColour; 
+  border: 2px solid $secondaryColour; 
   border-radius: 5px;
   font-size: 1.6rem;
   text-decoration: none;
@@ -131,7 +129,7 @@ button {
 
 input, 
 textarea {
-  border: 1px solid $secondaryColour; 
+  border: 2px solid $secondaryColour; 
   background-color: $supAccent; 
   padding: 15px 20px; 
   color: $supAccentTwo;
@@ -154,16 +152,19 @@ textarea {
 input:focus,
 textarea:focus,
 button:focus {
-  border-color: $supAccentTwo; 
+  border-radius: 5px;
+  border: 2px solid $supAccentTwo;
 }
 
 input:hover,
 textarea:hover {
   cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid $supAccentThree;
 }
 
 button:hover {
-  border: 1px solid $supAccentTwo; 
+  border: 2px solid $supAccentTwo; 
   background-color: $secondaryColour; 
   color: $primaryColour;
   cursor: pointer;

@@ -54,12 +54,13 @@
     a:hover,
     a:focus {
       color: $supAccentThree;
-      border-bottom: 1px solid $supAccentTwo;
+      border-bottom: 2px solid $supAccentTwo;
+      transition: 0.5s;
     }
 
     a:active {
       color: $supAccentTwo;
-      border-bottom: 1px solid $supAccentThree;
+      border-bottom: 2px solid $supAccentThree;
     }
 
     span {
@@ -91,12 +92,13 @@
     a:hover,
     a:focus {
       color: $supAccentThree;
-      border-bottom: 1px solid $supAccentTwo;
+      border-bottom: 2px solid $supAccentTwo;
+      transition: 0.5s;
     }
 
     a:active {
       color: $supAccentTwo;
-      border-bottom: 1px solid $supAccentThree;
+      border-bottom: 2px solid $supAccentThree;
     }
   }
 }
