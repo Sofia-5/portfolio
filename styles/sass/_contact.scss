@@ -25,11 +25,20 @@
 
   h4 {
     padding: 20px 0;
+
+    a:hover {
+      color: $supAccentThree;
+      transition: 0.5s;
+    }
+
+    a:active {
+      color: $supAccentTwo;
+    }
   }
 }
 
 .blurbAndSocials nav {
-    display: inline-block;
+  display: inline-block;
 } 
 
 .blurbAndSocials ul {
@@ -41,6 +50,19 @@
     i {
       font-size: 3rem;
     }
+  }
+}
+
+.socialMedia {
+  a:focus,
+  a:hover {
+    color: $supAccentThree;
+    transition: 0.5s; 
+    cursor: pointer;
+  }
+
+  a:active {
+    color: $supAccentTwo;
   }
 }
   
@@ -107,7 +129,6 @@ button {
   align-items: center;
 }
 
-
 input, 
 textarea {
   border: 1px solid $secondaryColour; 
@@ -142,10 +163,11 @@ textarea:hover {
 }
 
 button:hover {
-  border: 1px solid $secondaryColour; 
+  border: 1px solid $supAccentTwo; 
   background-color: $secondaryColour; 
   color: $primaryColour;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 textarea {

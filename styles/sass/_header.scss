@@ -41,10 +41,16 @@ header {
   .scrollDownArrow {
     position: absolute; 
     bottom: 5rem;
-    i {
+    a {
       color: $supAccentTwo; 
       font-size: 3rem;
       text-shadow: 2px 2px 1px $primaryColour;
+    }
+    a:hover,
+    a:focus {
+      color: $supAccentThree; 
+      font-size: 3.5rem;
+      text-shadow: 0px 0px 3px $supAccentTwo;
     }
   }
 }

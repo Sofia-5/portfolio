@@ -420,10 +420,17 @@ header {
   bottom: 5rem;
 }
 
-.welcome .scrollDownArrow i {
+.welcome .scrollDownArrow a {
   color: #ffffff;
   font-size: 3rem;
   text-shadow: 2px 2px 1px #1f2336;
+}
+
+.welcome .scrollDownArrow a:hover,
+.welcome .scrollDownArrow a:focus {
+  color: #acc421;
+  font-size: 3.5rem;
+  text-shadow: 0px 0px 3px #ffffff;
 }
 
 /*********************/
@@ -453,8 +460,11 @@ body {
   text-shadow: 2px 2px 1px #1f2336;
 }
 
-.nav li a:hover {
+.nav li a:hover,
+.nav li a:focus {
   color: #acc421;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /************************/
@@ -507,9 +517,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -584,14 +594,30 @@ body {
   margin: 0 10px;
 }
 
+.projectsContent .projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .projectsContent .projectLinks a {
   text-align: center;
   color: #ffffff;
 }
 
-.projectsContent .projectLinks a:hover {
+.projectsContent .projectLinks a:hover,
+.projectsContent .projectLinks a:focus {
   color: #acc421;
   border-bottom: 1px solid #ffffff;
+}
+
+.projectsContent .projectLinks a:active {
+  color: #ffffff;
+  border-bottom: 1px solid #acc421;
 }
 
 .projectsContent .projectLinks span {
@@ -603,24 +629,40 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin: 45px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 50px 0;
 }
 
 .allProjects:nth-child(3) .imageContainer {
   margin-left: 30px;
+  margin-right: 0px;
 }
 
 .allProjects:nth-child(3) .projectsContent {
   text-align: right;
 }
 
+.allProjects:nth-child(3) .projectsContent .projectLinks {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .allProjects:nth-child(3) .projectsContent a {
   color: #ffffff;
 }
 
-.allProjects:nth-child(3) .projectsContent a:hover {
+.allProjects:nth-child(3) .projectsContent a:hover,
+.allProjects:nth-child(3) .projectsContent a:focus {
   color: #acc421;
   border-bottom: 1px solid #ffffff;
+}
+
+.allProjects:nth-child(3) .projectsContent a:active {
+  color: #ffffff;
+  border-bottom: 1px solid #acc421;
 }
 
 /**************************/
@@ -660,6 +702,16 @@ body {
   padding: 20px 0;
 }
 
+.blurbAndSocials h4 a:hover {
+  color: #acc421;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blurbAndSocials h4 a:active {
+  color: #ffffff;
+}
+
 .blurbAndSocials nav {
   display: inline-block;
 }
@@ -676,6 +728,18 @@ body {
 
 .blurbAndSocials ul li i {
   font-size: 3rem;
+}
+
+.socialMedia a:focus,
+.socialMedia a:hover {
+  color: #acc421;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.socialMedia a:active {
+  color: #ffffff;
 }
 
 .formOnly {
@@ -814,10 +878,12 @@ textarea:hover {
 }
 
 button:hover {
-  border: 1px solid #ffc576;
+  border: 1px solid #ffffff;
   background-color: #ffc576;
   color: #1f2336;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 textarea {
@@ -838,7 +904,7 @@ footer {
 /*****************/
 /* Media Queries */
 /*****************/
-@media (max-width: 1200px) {
+@media (max-width: 1248px) {
   /* Global Styles */
   .wrapper {
     margin: 90px auto;
@@ -857,6 +923,9 @@ footer {
     margin-bottom: 30px;
     margin-right: 0px;
   }
+  .allAboutMe .aboutMeContent {
+    text-align: center;
+  }
   /* Projects Section Styles */
   .projectsSection .allProjects {
     -webkit-box-orient: vertical;
@@ -866,9 +935,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .projectsSection .allProjects .imageContainer {
     width: 80%;
@@ -880,6 +946,11 @@ footer {
     width: 85%;
     text-align: center;
   }
+  .projectsSection .allProjects .projectLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .projectsSection .allProjects:nth-child(3) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -888,9 +959,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .projectsSection .allProjects:nth-child(3) .imageContainer {
     margin-left: 0px;
@@ -898,6 +966,11 @@ footer {
   .projectsSection .allProjects:nth-child(3) .projectsContent {
     width: 85%;
     text-align: center;
+  }
+  .projectsSection .allProjects:nth-child(3) .projectLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /* Contact Section Styles */
   .blurbAndSocials {
@@ -925,7 +998,7 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1021px) {
   /* Global Styles */
   .wrapper {
     width: 75%;
@@ -1018,7 +1091,7 @@ footer {
   .projectsSection .allProjects .projectsContent {
     width: 100%;
   }
-  .projectsSection .projectsContent {
+  .projectsSection .allProjects:nth-child(3) .projectsContent {
     width: 100%;
   }
 }
@@ -1072,12 +1145,12 @@ footer {
   .aboutSection .allAboutMe .headShotContainer {
     width: 100%;
   }
-  /* About Me Styles */
+  /* Skills Styles */
   .skillsSection {
     margin: 40px 0;
   }
   .border ul li {
-    width: 40%;
+    width: 46%;
     padding: 10px 0px;
   }
   .border ul li i {
@@ -1085,7 +1158,34 @@ footer {
     font-size: 3.5rem;
     text-align: center;
   }
+  .border ul li img {
+    height: 35px;
+  }
   .border ul li p {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 355px) {
+  .projectLinks span {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Global Styles */
+  .wrapper {
+    width: 88%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
   }
 }

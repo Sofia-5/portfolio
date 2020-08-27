@@ -2,7 +2,7 @@
 /* Media Queries */ 
 /*****************/
 
-@media (max-width: 1200px) {
+@media (max-width: 1248px) {
   
   /* Global Styles */ 
   .wrapper {
@@ -18,6 +18,10 @@
       margin-bottom: 30px;
       margin-right: 0px;
     }
+
+    .aboutMeContent {
+      text-align: center;
+    }
   }
 
   /* Projects Section Styles */ 
@@ -26,7 +30,6 @@
     .allProjects {
       flex-direction: column;
       align-items: center;
-      justify-content: center;
     
       .imageContainer{
         width: 80%;
@@ -39,12 +42,15 @@
         width: 85%;
         text-align: center;
       } 
+
+      .projectLinks {
+        justify-content: center;
+      }
     }
 
     .allProjects:nth-child(3) {
       flex-direction: column;
       align-items: center;
-      justify-content: center;
 
       .imageContainer {
         margin-left: 0px;
@@ -53,6 +59,9 @@
       .projectsContent {
         width: 85%;
         text-align: center;
+      }
+      .projectLinks {
+        justify-content: center;
       }
     }
   }
@@ -82,7 +91,7 @@
   }
 }
 
-@media (max-width: 1000px) { 
+@media (max-width: 1021px) { 
 
   /* Global Styles */ 
   .wrapper { 
@@ -189,15 +198,15 @@
 
       .projectsContent {
         width: 100%;
-      } 
-    }
-
-      .projectsContent {
-        width: 100%;
       }
     }
-
   }
+  .projectsSection .allProjects:nth-child(3) {
+    .projectsContent {
+      width: 100%;
+    }
+  }
+}
 
 @media (max-width: 700px) {
     
@@ -257,14 +266,14 @@
     }
   }
 
-  /* About Me Styles */ 
+  /* Skills Styles */ 
   .skillsSection {
     margin: 40px 0;
   }
 
   .border ul {   
     li {
-      width: 40%;
+      width: 46%;
       padding: 10px 0px;
 
       i {
@@ -272,10 +281,50 @@
         font-size: 3.5rem;
         text-align: center;
       }
+
+      img { 
+        height: 35px;
+      }
   
       p {
         font-size: 1.1rem;
       }
     }
   }
+}
+
+@media (max-width: 355px) {
+
+  .projectLinks {
+    // display: flex; 
+    // flex-direction: column;
+
+    span {
+      visibility: hidden;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+
+  /* Global Styles */ 
+  .wrapper {
+    width: 88%;
+    margin: 40px auto; 
+    padding: 20px;
+  }
+
+  h1 {  
+    font-size: 4rem; 
+    } 
+  
+  h2 {
+    font-size: 3rem; 
+  }
+
+  h3 {
+    font-size: 2rem; 
+  }
+
+
 }

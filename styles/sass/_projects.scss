@@ -42,43 +42,61 @@
     }
   }
   .projectLinks {
+    display: flex; 
+    flex-direction: row;
+    // align-items: center;
     a {
       text-align: center;
       color: $supAccentTwo;
       // text-shadow: 0.5px 2px 0.5px $primaryColour;
     }
 
-    a:hover {
-      // font-weight: 500;
-      // text-shadow: 0.5px 2px 0.5px $supAccentTwo;
-      // text-decoration: underline 1px $supAccentTwo;
+    a:hover,
+    a:focus {
       color: $supAccentThree;
       border-bottom: 1px solid $supAccentTwo;
     }
+
+    a:active {
+      color: $supAccentTwo;
+      border-bottom: 1px solid $supAccentThree;
+    }
+
     span {
       margin: 0 10px;
     }
   }
 }
 
-
 .allProjects:nth-child(3) {
   flex-direction: row-reverse;
-  margin: 45px 0;
+  justify-content: flex-end;
+  margin: 50px 0;
 
   .imageContainer{
     margin-left: 30px;
+    margin-right: 0px;
   }
   .projectsContent {
     text-align: right;
+
+    .projectLinks {
+      justify-content: flex-end;
+    }
 
     a {
       color: $supAccentTwo;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
       color: $supAccentThree;
       border-bottom: 1px solid $supAccentTwo;
+    }
+
+    a:active {
+      color: $supAccentTwo;
+      border-bottom: 1px solid $supAccentThree;
     }
   }
 }
