@@ -1,0 +1,107 @@
+/*****************************/
+/*   Hamburger Menu Styles   */ 
+/*****************************/
+
+.mobileMenu {
+  display: none;
+  align-items: flex-end;
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 100vh;
+}
+
+.menuContainer {
+  height: 45px;
+  width: 50px;
+  margin: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+
+  span {
+    height: 5.5px;
+    width: 100%;
+    background-color: $secondaryColour; 
+    box-shadow: 2px 2px $primaryColour;
+    position: absolute;
+    border-radius: 10px;
+    display: block; 
+    opacity: 1; 
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  span:nth-child(1){
+    top:0;
+  }
+  span:nth-child(2){
+    top:15px;
+  }
+  span:nth-child(3){
+    top:30px;
+  }
+
+}
+
+.animate span:nth-child(1) {
+  top:20px;
+  transform: rotate(135deg);
+}
+
+.animate span:nth-child(2) {
+  display: none;
+  transition: .9s ease-in-out;
+}
+.animate span:nth-child(3) {
+  top: 20px;
+  transform: rotate(-135deg);
+}
+
+.dropDownMenu {
+  flex-direction: column;
+  background-color: rgba(31, 35, 54, 0.7);
+  width: 250px; 
+  padding: 50px;
+  flex-grow: 1;
+  position: relative;
+  right: -500px;
+  transition: right 0.8s;
+
+  li {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid $supAccentTwo;
+
+    a {
+      padding: 40px;
+      transition: color 0.3s;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+}
+
+.open {
+  right: 0px;
+}
+
+.decorate {
+  box-shadow: 2px 2px 3px $primaryColour;
+}
+
+.dropDownMenu li:first-child a{
+  font-weight: bold;
+}
+
+.dropDownMenu li:last-child {
+  border-bottom: none;
+}
+
+.dropDownMenu li a:hover {
+  color: $supAccentThree;
+  transition: .5s;
+}
+

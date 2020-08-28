@@ -9,25 +9,63 @@ body {
   position: fixed;
   right: 15px;
   top: 28%;
+  transition: 0.7s;
 
   li {
-    padding: 10px 0;
-
+    margin: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.7s;
+ 
     .eventScroll {
-      visibility: hidden;
+      display: none;
     }
 
     a {
-      font-size: 3rem;
       color: $supAccentTwo;
       text-shadow: 2px 2px 1px $primaryColour;
+      padding: 10px 5px;
+      width: 100%;
+      transition: 0.7s;
     }
-
+    
     a:hover,
     a:focus {
       color: $supAccentThree;
-      transition: 0.5s;
+      transition: 0.8s;
     }
   }
 }
 
+.nav div{
+  padding: 15px 0px;
+  display: block;
+  width: 100%;
+  text-shadow: 2px 2px 1px $primaryColour;
+  font-size: 1.4rem;
+  color: $secondaryColour;
+  transition: 0.5s;
+}
+
+.nav div:hover, 
+.nav div:focus {
+  color: $secondaryColour;
+  transition: 0.7s;
+}
+
+.nav i {
+  padding: 5px 15px;
+  width: 100%;
+  transition: 0.7s;
+  font-size: 3rem;
+  transition: 0.5s;
+}
+
+.nav i:hover,
+.nav i:focus {
+  transition: 0.7s;
+}

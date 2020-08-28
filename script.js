@@ -1,15 +1,9 @@
 // ** JS CODE ** // 
 
-$(function () {  
-  portfolioApp.init ();
-})
+
 
 const portfolioApp = {};
 
-portfolioApp.init = function() {
-  portfolioApp.navListener();
-  portfolioApp.projectListener();
-}
 
 // NAV // 
 // when user is at the welcome page (header) the Nav should be white in colour
@@ -22,16 +16,42 @@ portfolioApp.init = function() {
 
 
 portfolioApp.navListener = function () {
- $('body').on('scroll', function() {
-   
-   $().addClass
- })
-
- $('.eventScroll').on('click', function() {
-  $('#welcome').addClass('eventScroll');
- })
+  $('.nav li').hover(function() {
+    console.log('hover');
+    $(this).find('div').toggle();
+    $(this).find('i').toggle();
+  })
+  // $('.eventScroll').on('click', function() {
+  //   $('#welcome').addClass('eventScroll');
+  // })
 }
 
-portfolioApp.projectListener = function () {
-  $('.eventScroll').scroll()
- }
+portfolioApp.animateHamburgerMenu = function() {
+  $('.menuContainer').on('click', function() {
+    console.log("working?")
+    $('.menuContainer').toggleClass('animate');
+    $('.menuContainer span').toggleClass('decorate');
+  })
+}
+
+portfolioApp.dropDownMenu = function() {
+  $('.menuContainer').on('click', function() {
+    console.log("working 2?")
+    $('.dropDownMenu').toggleClass('open');
+  })
+
+  $('li a').on('click', function() {
+    $('.dropDownMenu').removeClass('open');
+  })
+}
+
+portfolioApp.init = function() {
+  portfolioApp.navListener();
+  portfolioApp.animateHamburgerMenu();
+  portfolioApp.dropDownMenu();
+
+}
+
+$(function () {  
+  portfolioApp.init ();
+})
