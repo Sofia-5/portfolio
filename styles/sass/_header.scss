@@ -42,6 +42,7 @@ header {
   .scrollDownArrow {
     position: absolute; 
     bottom: 5rem;
+    z-index: 101;
     a {
       color: $supAccentTwo; 
       font-size: 3rem;
