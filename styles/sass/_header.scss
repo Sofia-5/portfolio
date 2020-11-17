@@ -43,6 +43,7 @@ header {
     position: absolute; 
     bottom: 5rem;
     z-index: 101;
+    transition: ease-in-out 0.5s;
     a {
       color: $supAccentTwo; 
       font-size: 3rem;

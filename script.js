@@ -45,11 +45,18 @@ portfolioApp.dropDownMenu = function() {
   })
 }
 
+portfolioApp.scrollDownArrow = () => {
+  $('.scrollDownArrow').on('click', function() {
+      $('html').animate( {
+          scrollTop: $('main').offset().top}, 1000);
+  });
+};
+
 portfolioApp.init = function() {
   portfolioApp.navListener();
   portfolioApp.animateHamburgerMenu();
   portfolioApp.dropDownMenu();
-
+  portfolioApp.scrollDownArrow();
 }
 
 $(function () {  

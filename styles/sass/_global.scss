@@ -2,12 +2,6 @@
 /* Global Styles */ 
 /*****************/
 
-// .wrapper {
-//   max-width: 1200px;
-//   width: 90%;
-//   margin: 0 auto;  
-// }
-
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -31,35 +25,35 @@ body {
   font-family: $bodyFont; 
   font-weight: 100; 
   color: ffffff; 
-//   overflow-x:hidden;
-// } 
+  // overflow-x: hidden;
+} 
 
 h1 { 
 font-family: $headerOneFont;
 color: #ffffff; 
 font-weight: 700; 
-font-size: 8rem; 
+font-size: 8.5rem; 
 } 
 
 h2 {
   font-family: $headerOneFont;
   color: #ffffff; 
   font-weight: 500; 
-  font-size: 5rem; 
+  font-size: 5.5rem; 
   padding-bottom: 25px;
 }
 
 h3 {
   font-family: $bodyFont;
   color: $supAccentTwo; 
-  font-size: 2.5rem; 
+  font-size: 3rem; 
   font-weight: 400; 
 }
 
 h4 {
   font-family: $reviewFont;
   color: $supAccentTwo; 
-  font-size: 2rem; 
+  font-size: 2.5rem; 
   font-weight: 400;
 }
 
@@ -67,18 +61,18 @@ a {
   font-family: $bodyFont;
   font-weight: 400;
   color: $secondaryColour;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.8rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
 }
 
 p {
   font-family: $bodyFont;
   font-weight: 300;
   color: $supAccentTwo;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 li {
@@ -114,4 +108,5 @@ span {
   width: 80%;
   margin: 100px auto; 
   padding: 60px;
+  overflow-x: hidden;
 }
