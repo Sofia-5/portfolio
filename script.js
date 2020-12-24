@@ -17,13 +17,18 @@ const portfolioApp = {};
 
 portfolioApp.navListener = function () {
   $('.nav li').hover(function() {
-    console.log('hover');
-    $(this).find('div').toggle();
-    $(this).find('i').toggle();
+    $(this).find('i').fadeOut(150);
+    $(this).find('div').delay(150).fadeIn(150); 
+  }, function() {
+    $(this).find('div').fadeOut(150);
+    $(this).find('i').delay(150).fadeIn(150);
   })
-  // $('.eventScroll').on('click', function() {
-  //   $('#welcome').addClass('eventScroll');
-  // })
+
+  $("a.scroll").click(function (event) {    
+    event.preventDefault();    
+    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
+  });
+
 }
 
 portfolioApp.animateHamburgerMenu = function() {
